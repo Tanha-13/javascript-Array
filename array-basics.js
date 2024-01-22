@@ -1,5 +1,11 @@
 // declaring array
-// 1st
+// 1st: array literal notation
+const arr1 = []; //empty array
+const arr2 = [45,56,6,78,98,32]; //number types
+const myHeros = ['avengers','spiderman','ironman'];
+
+// 2nd: array constructor
+const arr3 = new Array();
 /**
  * info-1: Single variable, multiple elements(values).
  * info-2: arrays are resizable
