@@ -69,6 +69,32 @@ const allHeroes = marvelHeros.concat(dcHeros);
 
 // spread operators
 const allNewHeroes = [...marvelHeros,...dcHeros];
-console.log(allNewHeroes);
+// console.log(allNewHeroes);
 
-// 
+// flat method
+const anotherArr = [1,2,3,[4,5,6],7,[6,7,[4,5]]];
+const usableAnotherArr = anotherArr.flat(Infinity);
+// console.log(usableAnotherArr);
+
+// converting data into array format
+//checking the data whether are they in array format or not
+// console.log(Array.isArray('hitesh'));
+
+// convert
+// console.log(Array.from('node'));
+
+// object to array
+const studentId = {
+    name: 'Nusrat',
+    id: '201-51-021',
+    address: '48/5/1,Abdul Jabbar Road, Baish Teki, Mirpur 13'
+}
+// console.log(Array.from(Object.keys(studentId)));
+
+
+//
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1,score2,score3));
