@@ -43,14 +43,32 @@ const newArr = myArr.join(' '); // returns with space separator
 
 
 // topic: slice 
-console.log('A ', myArr);
+// console.log('A ', myArr);
 const sliceArray = myArr.slice(1,3);
-console.log(sliceArray);
-console.log('B ', myArr);
+// console.log(sliceArray);
+// console.log('B ', myArr);
 
 // topic: splice
 const spliceArray = myArr.splice(1,3);
-console.log(spliceArray);
-console.log('C ', myArr);
+// console.log(spliceArray);
+// console.log('C ', myArr);
 
 // todo: slice vs splice
+
+//
+const marvelHeros = ['thor','ironman','spiderman'];
+const dcHeros = ['batman','flash','spiderman'];
+// direct 
+// marvelHeros.push(dcHeros);
+// console.log(marvelHeros);
+
+//concat
+const allHeroes = marvelHeros.concat(dcHeros);
+// console.log(allHeroes);
+// console.log(marvelHeros);
+
+// spread operators
+const allNewHeroes = [...marvelHeros,...dcHeros];
+console.log(allNewHeroes);
+
+// 
