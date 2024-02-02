@@ -9,15 +9,15 @@ coding.forEach(function(language){
 })
 
 //arrow function
-// coding.forEach((language) => {
-//     console.log(language);
-// })
+coding.forEach((language) => {
+    // console.log(language);
+})
 
 
 //existing function as callback
-// function printMe(item){
-//     console.log(item);
-// }
+function printMe(item){
+    // console.log(item);
+}
 
 // coding.forEach(printMe);
 
@@ -43,5 +43,6 @@ const myCoding = [
     },
 ]
 
+//info: forEach method do not return any value.
 myCoding.forEach((item) => console.log(item.languageName))
 
