@@ -1,8 +1,9 @@
 // declaring array
 // 1st: array literal notation
 const arr1 = []; //empty array
+//initial elements in the array[brackets].
 const arr2 = [45,56,6,78,98,32]; //number types
-const myHeros = ['avengers','spiderman','ironman'];
+const myHeros = ['avengers','spiderman','ironman']; //string type
 
 // 2nd: array constructor
 const arr3 = new Array();
@@ -17,5 +18,9 @@ const arr3 = new Array();
 
 console.log(typeof arr2); //object
 console.log(Array.isArray(arr2));
-console.log(arr2[0]); // accessing array in javascript
+
+//info: array elements are numbered, starting with zero. We can get an element by its number in square brackets.
+console.log(arr2[0]); // accessing array elements in javascript
 console.log(arr2['one']); //not the proper way to access array elements.
+
+
