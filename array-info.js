@@ -66,7 +66,7 @@ arr1[3]; //undefined: tge values do not return
 //info: to clear an array, the simplest way is arr.length = 0.
 
 
-//topic: toString - returns a comma-separated list of elements.
+//topic: toString - returns a comma-separated list of elements. [] is converted to empty string ("").
 const arr2 = [1,2,3,4];
 console.log(arr2.toString());
 

@@ -4,15 +4,15 @@ const myArr = [0,1,5,6,3,8,9];
 myArr[0]; // 0. will show the element which index is zero(0) in the array
 
 // basic methods of array in javascript
-// topic: push - appends an element to the end and returns the new length of the array.
+// topic-01: push - appends an element to the end and returns the new length of the array.
 //info: arr.push() and arr[arr.length] adds the new element.
 
 const newElement = myArr.push(7); 
 newElement; // length: 8
-myArr.push(10);
-myArr; // [0, 1, 5,  6, 3, 8, 9, 7, 10]
+myArr.push(10,11);
+// console.log(myArr); // [0, 1, 5,  6, 3, 8, 9, 7, 10]
 
-// topic: pop - extracts the last element and returns it.
+// topic-02: pop - extracts the last element and returns it.
 //info: arr.pop() and arr.at(-1)returns the last element but arr.pop() modifies the array by removing the element.
 
 const removedElement = myArr.pop();
@@ -21,15 +21,33 @@ myArr; //[0, 1, 5, 6, 3, 8, 9, 7]
 
 
 //problem: optimization problem for unshift and shift methods. not recommended
-// topic: unshift : adds the element at the beginning and returns the new length of the array.
+// topic-03: unshift - adds the element at the beginning and returns the new length of the array.
 const addedElement = myArr.unshift(50);
 addedElement; //9
 myArr; //[50, 0, 1, 5, 6, 3, 8, 9, 7]
 
-// topic: shift : extracts the first element and return it.
+// topic-04: shift - extracts the first element and return it.
 const shiftElement = myArr.shift();
 shiftElement; // 50
 myArr; // [ 0, 1, 5, 6, 3, 8, 9, 7]
+
+//info: If we use delete operator to remove any element from the array, it will remove the array value but will not modify the rest of the elements.
+
+// topic-05: splice - is an inbuilt method in JavaScript that is used to modify the contents of an array by removing the existing elements and/or adding new elements.
+
+const spliceArray = myArr.splice(1,3);
+// console.log(spliceArray);
+// console.log('C ', myArr);
+
+// topic: slice 
+// console.log('A ', myArr);
+const sliceArray = myArr.slice(1,3);
+// console.log(sliceArray);
+// console.log('B ', myArr);
+
+
+
+// todo: slice vs splice
 
 // topic: includes
 // console.log(myArr.includes(9));
@@ -48,20 +66,6 @@ const newArr = myArr.join(' '); // returns with space separator
 //info: the main difference is type.
 // console.log(typeof myArr);  // object
 // console.log(typeof newArr); // string
-
-
-// topic: slice 
-// console.log('A ', myArr);
-const sliceArray = myArr.slice(1,3);
-// console.log(sliceArray);
-// console.log('B ', myArr);
-
-// topic: splice
-const spliceArray = myArr.splice(1,3);
-// console.log(spliceArray);
-// console.log('C ', myArr);
-
-// todo: slice vs splice
 
 //
 const marvelHeros = ['thor','ironman','spiderman'];
