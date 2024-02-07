@@ -14,7 +14,7 @@
 
 //example
 let webDev = ["HTML","CSS","Bootstrap","Tailwind CSS"];
-console.log(webDev);
+// console.log(webDev);
 //adding "JavaScript", "React Native", "PHP" after removing "Bootstrap"
 const removedElement = webDev.splice(2,1,"JavaScript","React Native");
 // console.log(webDev); //[ 'HTML', 'CSS', 'JavaScript', 'React Native', 'Tailwind CSS' ]
@@ -24,3 +24,15 @@ const removedElement = webDev.splice(2,1,"JavaScript","React Native");
 //info: -1 is the last value. 
 webDev.splice(-2,0,"React")
 // console.log(webDev); //[ 'HTML', 'CSS', 'JavaScript', 'React Native', 'Tailwind CSS' ]
+
+//todo: mutating method
+//todo: sparse arrays
+
+//more example
+let arr = ["I", "study","JavaScript","right",'new'];
+//remove first 3 elements and replace them with another
+arr.splice(0,3,"Let's","dance");
+// console.log(arr); //[ "Let's", 'dance', 'right', 'new' ]
+
+
+
