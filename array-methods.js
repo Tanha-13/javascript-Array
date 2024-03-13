@@ -39,7 +39,7 @@ const spliceArray = myArr.splice(1,3);
 // console.log(spliceArray);
 // console.log('C ', myArr);
 
-// topic: slice 
+// topic-06: slice - this method returns a new array containing a portion of the array on which it is implemented. the original remains unchanged.
 // console.log('A ', myArr);
 const sliceArray = myArr.slice(1,3);
 // console.log(sliceArray);
