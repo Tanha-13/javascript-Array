@@ -1,11 +1,13 @@
+//Array in Javascript is a data structure that allows to store and organize multiple values within a single variable. It is a versatile and dynamic object. Arrays in javascript are zero-indexed, meaning the first element is at index 0. Each value within an array is called an element. Elements are accessed by their index. Array index is a numerical representation that indicates the position of an element in the array. 
+
 // declaring array
-// 1st: array literal notation
+// 1st: array literal notation - this method is concise and widely preferred for its simplicity.
 const arr1 = []; //empty array
 //initial elements in the array[brackets].
-const arr2 = [45,56,6,78,98,32]; //number types
+const arr2 = [45,56,6,78,98,32]; // array and initializing with values
 const myHeros = ['avengers','spiderman','ironman']; //string type
 
-// 2nd: array constructor
+// 2nd: array constructor - refers to a method of creating arrays by invoking the Array constructor function. This approach allows for dynamic initialization and can be used to create arrays with a specified length or elements.
 const arr3 = new Array();
 /**
  * info-1: Single variable, multiple elements(values).
